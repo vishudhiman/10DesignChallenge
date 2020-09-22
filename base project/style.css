@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Roboto',sans-serif;
+	margin: 0;
+}
+header{
+	background-image: url('rest.jpg');
+	background-size: cover;
+	min-height: 100vh;
+	background-position: center center ;
+}
+a{
+	color: #fff;
+	text-decoration: none;
+}
+.container{
+	margin:0 auto;
+	width:1000px;
+	padding: 1rem;
+	max-width: 100%;
+
+}
+.pre-nav{
+	font-size: 1.7rem;
+	display: flex;
+	justify-content: space-between;
+	font-size: 2rem;
+	align-items: center;
+}
+.logo{
+	color:#fff;
+	font-weight: bold;
+	font-size: 2.5rem;
+}
+nav{
+	padding: 0.5rem 0;
+}
+nav ul{
+	display: flex;
+	flex-wrap: wrap;
+	list-style-type: none;
+	padding: 0;
+
+}
+nav li {
+	flex: 1 auto;
+}
+nav li a{
+	display: block;
+	text-align: center;
+background-color: #209944;
+padding: 1rem 2rem;
+}
+nav a.active{
+	background-color: black;
+	font-weight: bold;
+}
+nav a.highlight{
+background-color: coral
+}
+nav a:hover{
+	opacity: 0.9;
+}
+.content{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	margin-top: 8rem;
+}
+.content h1{
+	color: #fff;
+	background-color: coral;
+	display: inline-block;
+	padding: 1rem;
+	font-weight: 400;
+}
+.white-link{
+	color:#fff;
+	background-color:black; 
+	padding: 1rem;
+	
+}
+.teal-link{
+	color:#fff;
+	background-color: coral;
+	padding: 1rem;
+	margin-top: 2rem;
+}
+@media screen and (max-width: 700px){
+	.pre-nav{
+		flex-direction: column;
+		justify-content: center;
+	}
+	nav ul{
+		flex-direction: row;
+
+	}
+	.content{
+		font-size: 1.5rem;
+	}
+}
+
